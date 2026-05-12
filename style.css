@@ -97,7 +97,6 @@ button {
 }
 
 .is-home .name-overlay,
-.is-home .student-id-overlay,
 .is-home .qr-overlay,
 .is-home .refresh-hotspot,
 .is-home .back-hotspot,
@@ -123,28 +122,6 @@ button {
   font-weight: 450;
   line-height: 1;
   letter-spacing: 0;
-  white-space: nowrap;
-  pointer-events: none;
-}
-
-.student-id-overlay {
-  position: absolute;
-  left: 39.9%;
-  top: 32.7%;
-  z-index: 4;
-  width: 28%;
-  height: 2.55%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  overflow: hidden;
-  background: #fff;
-  color: #070707;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: clamp(13px, 7vw, 10px);
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: 0.03em;
   white-space: nowrap;
   pointer-events: none;
 }
