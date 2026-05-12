@@ -12,8 +12,10 @@ const passStage = document.getElementById("passStage");
 const passBackground = document.getElementById("passBackground");
 const backHotspot = document.getElementById("backHotspot");
 const mobilePassHotspot = document.getElementById("mobilePassHotspot");
-const PASS_IMAGE_SRC = "./library_pass_design.jpg?v=8";
-const HOME_IMAGE_SRC = "./home.jpg?v=8";
+const studentIdOverlay = document.getElementById("studentIdOverlay");
+const PASS_IMAGE_SRC = "./library_pass_design.jpg?v=9";
+const HOME_IMAGE_SRC = "./home.jpg?v=9";
+const STUDENT_ID = "2022204073";
 
 let currentIndex = 0;
 let qrItems = [];
@@ -312,7 +314,7 @@ function lockViewport(event) {
 
 function initPwa() {
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("./service-worker.js?v=8", { updateViaCache: "none" }).catch(() => {});
+    navigator.serviceWorker.register("./service-worker.js?v=9", { updateViaCache: "none" }).catch(() => {});
   }
 }
 
@@ -327,6 +329,10 @@ function initQr() {
   setQr(currentIndex);
 }
 
+function initStudentId() {
+  studentIdOverlay.textContent = STUDENT_ID;
+}
+
 document.addEventListener("gesturestart", lockViewport, { passive: false });
 document.addEventListener("gesturechange", lockViewport, { passive: false });
 document.addEventListener("gestureend", lockViewport, { passive: false });
@@ -337,4 +343,5 @@ backHotspot.addEventListener("click", showHome);
 mobilePassHotspot.addEventListener("click", showPass);
 
 initPwa();
+initStudentId();
 initQr();
