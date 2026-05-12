@@ -1,13 +1,13 @@
-const CACHE_NAME = "library-pass-pwa-v11";
+const CACHE_NAME = "library-pass-pwa-v12";
 const ASSETS = [
   "./",
   "./index.html",
-  "./style.css?v=11",
-  "./app.js?v=11",
+  "./style.css?v=12",
+  "./app.js?v=12",
   "./manifest.json",
   "./icon.png",
-  "./library_pass_design.jpg?v=11",
-  "./home.jpg?v=11",
+  "./library_pass_design.jpg?v=12",
+  "./home.jpg?v=12",
 ];
 
 self.addEventListener("install", (event) => {
