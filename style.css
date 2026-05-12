@@ -130,16 +130,16 @@ button {
 
 .qr-overlay {
   position: absolute;
-  left: 30%;
-  top: 50.78%;
+  left: 32.14%;
+  top: 52.0%;
   z-index: 3;
-  width: 40%;
-  height: 22.67%;
+  width: 35.73%;
+  height: 20.25%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2.1%;
-  background: #d0d2d2;
+  padding: 0;
+  background: #fff;
 }
 
 .qr-overlay img {

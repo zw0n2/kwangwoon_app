@@ -4,7 +4,7 @@ const QR_SIZE = 17 + QR_VERSION * 4;
 const DATA_CODEWORDS = 34;
 const ECC_CODEWORDS = 10;
 const REMAINDER_BITS = 7;
-const QUIET_ZONE = 4;
+const QUIET_ZONE = 1;
 
 const qrImage = document.getElementById("qrImage");
 const refreshHotspot = document.getElementById("refreshHotspot");
