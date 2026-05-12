@@ -1,5 +1,4 @@
 :root {
-  --pass-aspect: 1170 / 2064;
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-right: env(safe-area-inset-right, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
@@ -77,8 +76,11 @@ button {
 
 .pass-stage {
   position: relative;
-  width: min(100vw, calc((100dvh - var(--safe-top) - var(--safe-bottom)) * var(--pass-aspect)));
-  height: min(calc(100dvh - var(--safe-top) - var(--safe-bottom)), calc(100vw / var(--pass-aspect)));
+  width: 100vw;
+  max-width: calc((100vh - var(--safe-top) - var(--safe-bottom)) * 0.56686);
+  height: auto;
+  max-height: calc(100vh - var(--safe-top) - var(--safe-bottom));
+  aspect-ratio: 1170 / 2064;
   min-height: 0;
   overflow: hidden;
   flex: 0 0 auto;
@@ -166,7 +168,7 @@ button {
   }
 
   .pass-stage {
-    width: min(100vw, calc((100svh - var(--safe-top) - var(--safe-bottom)) * var(--pass-aspect)));
-    height: min(calc(100svh - var(--safe-top) - var(--safe-bottom)), calc(100vw / var(--pass-aspect)));
+    max-width: calc((100svh - var(--safe-top) - var(--safe-bottom)) * 0.56686);
+    max-height: calc(100svh - var(--safe-top) - var(--safe-bottom));
   }
 }

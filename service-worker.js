@@ -1,4 +1,4 @@
-const CACHE_NAME = "library-pass-pwa-v2";
+const CACHE_NAME = "library-pass-pwa-v3";
 const ASSETS = [
   "./",
   "./index.html",
