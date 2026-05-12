@@ -1,0 +1,19 @@
+{
+  "name": "모바일 도서관 출입증",
+  "short_name": "도서관 출입증",
+  "description": "시연용 모바일 도서관 출입증 PWA",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "./icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
