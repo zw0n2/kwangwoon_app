@@ -1,7 +1,7 @@
 {
   "name": "모바일 도서관 출입증",
   "short_name": "도서관 출입증",
-  "description": "시연용 모바일 도서관 출입증 PWA",
+  "description": "광운대학교모바일도서관",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
