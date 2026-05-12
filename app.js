@@ -13,8 +13,8 @@ const passBackground = document.getElementById("passBackground");
 const backHotspot = document.getElementById("backHotspot");
 const mobilePassHotspot = document.getElementById("mobilePassHotspot");
 const studentIdOverlay = document.getElementById("studentIdOverlay");
-const PASS_IMAGE_SRC = "./library_pass_design.jpg?v=10";
-const HOME_IMAGE_SRC = "./home.jpg?v=10";
+const PASS_IMAGE_SRC = "./library_pass_design.jpg?v=11";
+const HOME_IMAGE_SRC = "./home.jpg?v=11";
 const STUDENT_ID = "2022204073";
 
 let currentIndex = 0;
@@ -314,7 +314,7 @@ function lockViewport(event) {
 
 function initPwa() {
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("./service-worker.js?v=10", { updateViaCache: "none" }).catch(() => {});
+    navigator.serviceWorker.register("./service-worker.js?v=11", { updateViaCache: "none" }).catch(() => {});
   }
 }
 

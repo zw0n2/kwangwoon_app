@@ -129,21 +129,22 @@ button {
 
 .student-id-overlay {
   position: absolute;
-  left: 39.4%;
-  top: 32.65%;
+  left: 39.9%;
+  top: 32.7%;
   z-index: 4;
-  width: 28.5%;
-  height: 2.9%;
+  width: 28%;
+  height: 2.55%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   overflow: hidden;
   background: #fff;
-  color: #050505;
-  font-size: clamp(20px, 6.2vw, 40px);
-  font-weight: 400;
+  color: #070707;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(16px, 5.1vw, 31px);
+  font-weight: 300;
   line-height: 1;
-  letter-spacing: 0;
+  letter-spacing: 0.03em;
   white-space: nowrap;
   pointer-events: none;
 }
