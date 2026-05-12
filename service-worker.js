@@ -7,7 +7,7 @@ const ASSETS = [
   "./manifest.json",
   "./service-worker.js",
   "./icon.png",
-  "./library_pass_design.png.jpg",
+  "./library_pass_design.png",
 ];
 
 self.addEventListener("install", (event) => {
