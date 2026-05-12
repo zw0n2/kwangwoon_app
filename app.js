@@ -8,6 +8,10 @@ const QUIET_ZONE = 4;
 
 const qrImage = document.getElementById("qrImage");
 const refreshHotspot = document.getElementById("refreshHotspot");
+const passStage = document.getElementById("passStage");
+const passBackground = document.getElementById("passBackground");
+const backHotspot = document.getElementById("backHotspot");
+const mobilePassHotspot = document.getElementById("mobilePassHotspot");
 
 let currentIndex = 0;
 let qrItems = [];
@@ -288,6 +292,18 @@ function changeQr() {
   setQr(currentIndex);
 }
 
+function showHome() {
+  passBackground.src = "./home.jpg";
+  passStage.classList.remove("is-pass");
+  passStage.classList.add("is-home");
+}
+
+function showPass() {
+  passBackground.src = "./library_pass_design.jpg";
+  passStage.classList.remove("is-home");
+  passStage.classList.add("is-pass");
+}
+
 function lockViewport(event) {
   event.preventDefault();
 }
@@ -315,6 +331,8 @@ document.addEventListener("gestureend", lockViewport, { passive: false });
 document.addEventListener("touchmove", lockViewport, { passive: false });
 
 refreshHotspot.addEventListener("click", changeQr);
+backHotspot.addEventListener("click", showHome);
+mobilePassHotspot.addEventListener("click", showPass);
 
 initPwa();
 initQr();

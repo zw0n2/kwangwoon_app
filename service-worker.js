@@ -1,4 +1,4 @@
-const CACHE_NAME = "library-pass-pwa-v4";
+const CACHE_NAME = "library-pass-pwa-v5";
 const ASSETS = [
   "./",
   "./index.html",
@@ -7,6 +7,7 @@ const ASSETS = [
   "./manifest.json",
   "./icon.png",
   "./library_pass_design.jpg",
+  "./home.jpg",
 ];
 
 self.addEventListener("install", (event) => {

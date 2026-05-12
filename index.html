@@ -21,13 +21,28 @@
   </head>
   <body>
     <main class="app-shell" aria-label="모바일 도서관 출입증">
-      <section class="pass-stage">
+      <section id="passStage" class="pass-stage is-pass">
         <img
-          class="pass-background"
+          id="passBackground"
+          class="screen-background"
           src="./library_pass_design.jpg"
           alt=""
           draggable="false"
         />
+
+        <button
+          id="backHotspot"
+          class="back-hotspot"
+          type="button"
+          aria-label="홈 화면으로 이동"
+        ></button>
+
+        <button
+          id="mobilePassHotspot"
+          class="mobile-pass-hotspot"
+          type="button"
+          aria-label="모바일 이용증 열기"
+        ></button>
 
         <div class="name-overlay" aria-label="이름">장서현</div> 
 
