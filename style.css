@@ -141,7 +141,7 @@ button {
   background: #fff;
   color: #070707;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: clamp(13px, 4.05vw, 25px);
+  font-size: clamp(13px, 4.05vw, 20px);
   font-weight: 300;
   line-height: 1;
   letter-spacing: 0.03em;
