@@ -122,15 +122,15 @@ button {
 
 .qr-overlay {
   position: absolute;
-  left: 30.02%;
-  top: 50.5%;
+  left: 30%;
+  top: 50.78%;
   z-index: 3;
-  width: 40.6%;
-  height: 23.5%;
+  width: 40%;
+  height: 22.67%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.9%;
+  padding: 2.1%;
   background: #d0d2d2;
 }
 
