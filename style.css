@@ -76,10 +76,8 @@ button {
 
 .pass-stage {
   position: relative;
-  width: 100vw;
-  max-width: calc((100vh - var(--safe-top) - var(--safe-bottom)) * 0.56686);
-  height: auto;
-  max-height: calc(100vh - var(--safe-top) - var(--safe-bottom));
+  width: min(100vw, calc((100vh - var(--safe-top) - var(--safe-bottom)) * 0.56686));
+  height: min(calc(100vw * 1.7641), calc(100vh - var(--safe-top) - var(--safe-bottom)));
   aspect-ratio: 1170 / 2064;
   min-height: 0;
   overflow: hidden;
@@ -205,7 +203,7 @@ button {
   }
 
   .pass-stage {
-    max-width: calc((100svh - var(--safe-top) - var(--safe-bottom)) * 0.56686);
-    max-height: calc(100svh - var(--safe-top) - var(--safe-bottom));
+    width: min(100vw, calc((100svh - var(--safe-top) - var(--safe-bottom)) * 0.56686));
+    height: min(calc(100vw * 1.7641), calc(100svh - var(--safe-top) - var(--safe-bottom)));
   }
 }
