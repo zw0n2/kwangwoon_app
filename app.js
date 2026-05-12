@@ -12,6 +12,8 @@ const passStage = document.getElementById("passStage");
 const passBackground = document.getElementById("passBackground");
 const backHotspot = document.getElementById("backHotspot");
 const mobilePassHotspot = document.getElementById("mobilePassHotspot");
+const PASS_IMAGE_SRC = "./library_pass_design.jpg?v=7";
+const HOME_IMAGE_SRC = "./home.jpg?v=7";
 
 let currentIndex = 0;
 let qrItems = [];
@@ -293,13 +295,13 @@ function changeQr() {
 }
 
 function showHome() {
-  passBackground.src = "./home.jpg";
+  passBackground.src = HOME_IMAGE_SRC;
   passStage.classList.remove("is-pass");
   passStage.classList.add("is-home");
 }
 
 function showPass() {
-  passBackground.src = "./library_pass_design.jpg";
+  passBackground.src = PASS_IMAGE_SRC;
   passStage.classList.remove("is-home");
   passStage.classList.add("is-pass");
 }
@@ -310,7 +312,7 @@ function lockViewport(event) {
 
 function initPwa() {
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("./service-worker.js").catch(() => {});
+    navigator.serviceWorker.register("./service-worker.js?v=7", { updateViaCache: "none" }).catch(() => {});
   }
 }
 
